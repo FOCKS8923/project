@@ -1,0 +1,380 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.code{
+    padding: 20px;
+    background-color: #1f1f20;
+    color: white;
+    height: 100vh;
+}
+
+.test{
+    color: white;
+}
+.header{
+    display: flex;
+    /* position: absolute; */
+    width: 100%;
+    height: 1px;
+    background: darkorange;
+}
+
+.logo {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 50px;
+    border: 2px solid gold;
+    border-radius: 50px;
+}
+
+.navbar {
+    top: 0;
+    z-index: 99;
+}
+
+.leftnav {
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+
+.leftnav li {
+    list-style: none;
+}
+
+.leftnav li a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 30px;
+    font-size: 16px;
+}
+
+.leftnav li a:hover {
+    color: gold;
+    font-size: 16px;
+}
+
+.rightnav {
+    display: flex;
+    width: 40%;
+    justify-content: right;
+    align-items: center;
+}
+
+#search {
+    padding: 5px;
+    border: 2px grey;
+    border-radius: 9px;
+}
+
+.search {
+    display: flex;
+}
+
+.background {
+    background: #1f1f20;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.bg-background {
+    background: #1f1f20;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.server-ip {
+    display: flex;
+    flex-direction: column;
+    color: gold;
+    justify-content: center;
+    padding-left: 2px;
+    padding-right: 10px;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ip {
+    color: darkorange;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fsec {
+    height: 100vh;
+}
+
+.main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    height: 60%;
+    padding-left: 90px;
+    margin-right: 5px;
+}
+
+
+.fhalf {
+    display: flex;
+    flex-direction: column;
+}
+
+.shalf {
+    width: 40%;
+}
+
+.shalf img {
+    border: 3px solid gold;
+    border-radius: 100px;
+}
+
+.text-big {
+    font-size: 45px;
+    color: darkorange;
+}
+
+.text-sm {
+    color: gold;
+    font-size: 22px;
+}
+
+.buttons {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.btn{
+    position: relative;
+    font-size: 21px;
+    font-family: 'poppins', sans-serif;
+    background: #444;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 12px 20px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 40px var(--clr);
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #1f1f20;
+}
+.btn span{
+    position: relative;
+    /* z-index: 1; */
+}
+.btn i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.btn i::before{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #1f1f20;
+    border: 2px solid var(--clr);
+    transition: 0.5s;
+}
+.btn:hover i::before{
+    left: 0%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 38px 40px var(--clr);
+}
+
+.btn i::after{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #1f1f20;
+    border: 2px solid var(--clr);
+    transition: 0.5s;
+}
+.btn:hover i::after{
+    left: 100%;
+    transform: translateX(-50%) rotate(-45deg);
+    box-shadow: 40px -38px var(--clr);
+}
+.contact {
+    background: #1f1f20;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    padding-left: 50px;
+    color: white;
+    height: 120vh;
+}
+
+.text-center {
+    max-width: 70%;
+    text-align: center;
+}
+
+.form div {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    padding-top: 20px;
+}
+
+.form div input {
+    font-size: 18px;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.form div textarea {
+    font-size: 20px;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.form label {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.superscript {
+    font-size: 12px;
+}
+
+.main-rules {
+    background: rgba(0, 0, 0, 1);
+    padding-left: 50px;
+    color: white;
+
+}
+
+.rules-text {
+    padding-left: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.general-rules {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.rules {
+    padding-left: 40px;
+    padding-top: 16px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.801);
+    font-weight: bold;
+}
+
+.rules ul li {
+    padding-top: 12px;
+}
+
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 4%;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 4px 5px;
+}
+.footer{
+    padding-bottom: 5%;
+    background: rgba(0, 0, 0, 1);
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+.video video{
+    border: 2px solid white;
+    max-width: 80%;
+}
+
+.pdf-box{
+    padding-top: 2%;
+    padding-left: 10%;
+    /* padding-right: 11%; */
+    margin: auto;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pdf-fhalf{
+    max-width: 70%;
+}
+.pdf-heading{
+    font-size: 30px;
+    color: darkorange;
+    font-weight:bold;
+}
+.pdf-text{
+    color: gold;
+    font-size: 18px;
+}
+.pdf-text a{
+    text-decoration: none;
+    color: orange;
+}
+.pdf-text a:hover{
+    text-decoration: none;
+    color: darkorange;
+}
+.pdf-shalf{
+    max-width: 30%;
+    padding-left: 10%;
+    transition: 0.5s;
+}
+.pdf-shalf img{
+    width: 120px;
+}
+.pdf-shalf img:hover{
+    width: 135px;
+    transition: 0.5s;
+
+}
